@@ -18,6 +18,8 @@ body p{
 /* ======================== Nav Bar Start ======================================== */
 
 header {
+  /* z-index: 900; */
+
   background: #f0f8f0;
 }
 
@@ -32,9 +34,11 @@ header {
 }
 
 .tsite_logo {
+  /* padding: 0 200px; */
   height: 20px;
   width: auto;
 }
+
 
 .tnav-links {
   list-style: none;
@@ -100,7 +104,8 @@ header {
 
 /* Responsive Styles */
 
-/* @media (min-width: 2560px) {
+
+ @media (min-width: 2560px) {
 .tnavcontainer{
   margin: auto;
   padding-left: 50px;
@@ -109,7 +114,7 @@ header {
 
 
 }
-*/
+
 
 
 @media (max-width: 768px) {
@@ -126,6 +131,7 @@ header {
 
   .tnav-links.active {
       display: flex;
+      z-index: 1;
   }
 
   .tnav-links li {
@@ -586,7 +592,8 @@ header {
   }
   
   .about-me__text p {
-    font-size: 1.1em;
+    font-size: 1em;
+    text-align: justify;
     line-height: 1.6;
     margin-bottom: 15px;
   }
@@ -629,8 +636,8 @@ header {
   /* Responsive adjustments */
   @media(min-width: 1024px){
     .section_about_me{
-      padding-top: 200px;
-      height: 700px;
+      padding-top: 150px;
+      height: 600px;
     }
   }
   @media (max-width: 768px) {
@@ -1336,6 +1343,7 @@ header {
   background-color: #D4E9DD;
 }
 .service-item {
+  /* z-index: 9; */
   position: relative;
   background-color: #f4faea;
   border-radius: 10px;
@@ -1645,7 +1653,7 @@ border: 5px solid #0056b3;
   cursor: pointer;
   font-size: 18px;
   transform: translateY(-50%);
-  z-index: 100;
+  z-index: 11;
 }
 
 .prev {
@@ -1760,28 +1768,34 @@ h1 {
 .testimonial-next {
   right: -10px;
 }
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++ Revew section +++++++++++++++++++++++++++++ */
 
 .review {
   display: flex;
   justify-content: center; /* Center the button horizontally */
   align-items: center; /* Center the button vertically if necessary */
-  height: 20px;
-  padding: 3px;
+  height: 24px;
   background-color: red;
+  
 }
+.review_verify a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: blueviolet;
+  
+  
+  }
 
 .review button {
-width: 150px;
-background-color: #59F6E6;
-border: 1px solid rebeccapurple;
-border-radius: 8px;
+  width: 150px;
+  height: 22px;
+  background-color: #59F6E6;
+  border: 1px solid rebeccapurple;
+  border-radius: 8px;
 }
 
-.review_verify a {
-text-decoration: none;
-font-weight: 600;
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1802,10 +1816,7 @@ font-weight: 600;
 .review button {
   font-size: 14px; /* Adjust button font size for smaller screens */
 }
-.review_verify a {
-font-size: 12px;
-font-weight: 500;
-}
+
 
 .parent_testimonial {
   padding: 10px;
@@ -1863,17 +1874,18 @@ color: #f4a261;
 }
 
 .section-titleinfo h2 {
-  font-size: 2rem;
+
+  font-size: 2.rem;
   margin-bottom: 10px;
 }
 
 .section-titleinfo h3 {
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   margin-bottom: 5px;
 }
 
 .section-titleinfo p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #000000;
   margin-bottom: 20px;
 }
@@ -1946,22 +1958,23 @@ font-family: 'Times New Roman', Times, serif;
     padding: 30px 90px 30px 150px  ;
 
   }
+}
+
   @media (max-width: 1024px) {
     .contact-cardinfo {
         width: 400px;
     }
   
     .section-titleinfo h3 {
-      font-size: 2.5rem;
+      /* font-size: 2.5rem; */
       margin-bottom: 5px;
     }
     .section-titleinfo p {
-      font-size: 2.2rem;
+      /* font-size: 2.2rem; */
       margin-bottom: 25px;
   
     }
   }
-}
 
 @media (max-width: 1440px) {
   .contact-cardinfo {
@@ -1969,11 +1982,9 @@ font-family: 'Times New Roman', Times, serif;
   }
 
   .section-titleinfo h3 {
-    font-size: 2.5rem;
     margin-bottom: 5px;
   }
   .section-titleinfo p {
-    font-size: 2.2rem;
     margin-bottom: 25px;
 
   }
@@ -1988,11 +1999,9 @@ font-family: 'Times New Roman', Times, serif;
   }
 
   .section-titleinfo h3 {
-    font-size: 2.5rem;
     margin-bottom: 5px;
   }
   .section-titleinfo p {
-    font-size: 2.2rem;
     margin-bottom: 25px;
 
   }
@@ -2001,8 +2010,7 @@ font-family: 'Times New Roman', Times, serif;
 
 
 @media (max-width: 768px) {
-  /* .contact-cardsinfo {
-  } */
+
   .cardsprentinfo{
     grid-template-columns: 1fr 1fr;
     margin-left: -100px;
@@ -2018,11 +2026,9 @@ font-family: 'Times New Roman', Times, serif;
     margin-left: -50px;
   }
   .section-titleinfo h3 {
-    font-size: 2.4rem;
     margin-bottom: 5px;
   }
   .section-titleinfo p {
-    font-size: 2rem;
     margin-bottom: 25px;
 
   }
@@ -2041,6 +2047,14 @@ font-family: 'Times New Roman', Times, serif;
   .section-titleinfo{
     margin-left: -50px;
   }
+  .section-titleinfo p{
+    font-size: 1.3rem;
+
+
+  }
+  .section-titleinfo h3 {
+    font-size: 1.8rem;
+  }
 
 }
 @media (max-width: 375px) {
@@ -2058,10 +2072,8 @@ font-family: 'Times New Roman', Times, serif;
   .section-titleinfo{
     margin-left: -50px;
   }
-  .section-titleinfo h3 {
-    font-size: 1.4rem;
-    margin-bottom: 5px;
-  }
+
+
 }
 
 
@@ -2085,7 +2097,6 @@ font-family: 'Times New Roman', Times, serif;
 form {
   max-width: 900px;
   margin: 0 auto;
-  /* background-color: #fff; */
   background-color: #f1eaea;
 
   padding: 20px;
