@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// ++++++++++++++++++++++++ protfolio carosel Stat +++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++ protfolio carosel Start +++++++++++++++++++++++++++++++++++++++++++
 
 let index = 0;
 
@@ -98,3 +98,8 @@ function toggleAdditionalInfo() {
 // +++++++++++++++++++++++++++++ Nav ber End ++++++++++++++++++++++++++++
 
 
+        // Disable right-click on the whole document
+        // document.addEventListener('contextmenu', function(event) {
+        //     event.preventDefault(); // Disable right-click menu
+        //     alert("Right-click is disabled on this page!");
+        // });
